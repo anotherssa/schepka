@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+
+  //outline: 1px solid red;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+}
+
+.l-container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+.btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.icon {
+   display: inline-block;
+ }
+
+.menu {
+  @include list-reset;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+input:focus {
+  outline: none;
+}

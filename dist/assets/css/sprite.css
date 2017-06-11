@@ -1,0 +1,150 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-bars {
+  background-image: url(../images/sprite.png);
+  background-position: -405px -177px;
+  width: 22px;
+  height: 17px;
+}
+.icon-cart {
+  background-image: url(../images/sprite.png);
+  background-position: -445px -84px;
+  width: 37px;
+  height: 38px;
+}
+.icon-chevron-down {
+  background-image: url(../images/sprite.png);
+  background-position: -479px -156px;
+  width: 10px;
+  height: 6px;
+}
+.icon-chevron-up {
+  background-image: url(../images/sprite.png);
+  background-position: -479px -150px;
+  width: 10px;
+  height: 6px;
+}
+.icon-circled-double-arrow-large {
+  background-image: url(../images/sprite.png);
+  background-position: -405px -84px;
+  width: 40px;
+  height: 40px;
+}
+.icon-circled-double-arrow {
+  background-image: url(../images/sprite.png);
+  background-position: -405px -150px;
+  width: 27px;
+  height: 27px;
+}
+.icon-deep-assortment {
+  background-image: url(../images/sprite.png);
+  background-position: -196px -243px;
+  width: 84px;
+  height: 84px;
+}
+.icon-fasteners {
+  background-image: url(../images/sprite.png);
+  background-position: -131px -121px;
+  width: 120px;
+  height: 120px;
+}
+.icon-glues {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -121px;
+  width: 131px;
+  height: 122px;
+}
+.icon-isolation {
+  background-image: url(../images/sprite.png);
+  background-position: -134px 0px;
+  width: 157px;
+  height: 103px;
+}
+.icon-mail {
+  background-image: url(../images/sprite.png);
+  background-position: -432px -150px;
+  width: 25px;
+  height: 25px;
+}
+.icon-map-marker {
+  background-image: url(../images/sprite.png);
+  background-position: -461px -124px;
+  width: 25px;
+  height: 25px;
+}
+.icon-mixes {
+  background-image: url(../images/sprite.png);
+  background-position: -291px 0px;
+  width: 114px;
+  height: 120px;
+}
+.icon-own-production {
+  background-image: url(../images/sprite.png);
+  background-position: -405px 0px;
+  width: 84px;
+  height: 84px;
+}
+.icon-paints {
+  background-image: url(../images/sprite.png);
+  background-position: -291px -120px;
+  width: 101px;
+  height: 120px;
+}
+.icon-phone {
+  background-image: url(../images/sprite.png);
+  background-position: -436px -124px;
+  width: 25px;
+  height: 25px;
+}
+.icon-piggy-bank {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -243px;
+  width: 112px;
+  height: 107px;
+}
+.icon-plywood {
+  background-image: url(../images/sprite.png);
+  background-position: 0px 0px;
+  width: 134px;
+  height: 121px;
+}
+.icon-quality-guaranty {
+  background-image: url(../images/sprite.png);
+  background-position: -280px -243px;
+  width: 84px;
+  height: 84px;
+}
+.icon-search {
+  background-image: url(../images/sprite.png);
+  background-position: -457px -150px;
+  width: 22px;
+  height: 22px;
+}
+.icon-star {
+  background-image: url(../images/sprite.png);
+  background-position: -405px -124px;
+  width: 31px;
+  height: 26px;
+}
+.icon-years-in-market {
+  background-image: url(../images/sprite.png);
+  background-position: -112px -243px;
+  width: 84px;
+  height: 84px;
+}

@@ -1,0 +1,15 @@
+@import 'bourbon';
+@import 'grid-settings';
+@import 'mixins';
+
+@import 'base';
+@import 'typography';
+@import 'fonts';
+
+@import 'components/l-header';
+@import 'components/main-carousel';
+@import 'components/catalog';
+@import 'components/products';
+@import 'components/our-advantages';
+@import 'components/request-consultaion';
+@import 'components/l-footer';

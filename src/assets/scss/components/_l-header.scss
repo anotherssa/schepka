@@ -1,0 +1,277 @@
+.l-header {
+  .info-bar {
+    background-color: #ffcc33;
+  }
+
+  .info-bar-container {
+    @include container;
+
+    display: flex;
+  }
+
+  .btn_toggle-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #252525;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .logo-img {
+    display: none;
+  }
+
+  .logo-img_mobile {
+    display: block;
+  }
+
+  .info {
+    @include list-reset;
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #181818;
+
+    address {
+      font-style: normal;
+    }
+  }
+
+  .info__item:first-child {
+    border-left: none;
+  }
+
+  .info__item {
+    display: none;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0 3%;
+    border-left: 1px solid #fff;
+  }
+
+  .info__item_cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  .working-hours {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .cart-data {
+    font-size: 12px;
+  }
+
+  .order-call {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    .phone {
+      margin-bottom: 5px;
+      font-size: 18px;
+    }
+  }
+
+  .btn_order-call {
+    padding: 7px 15px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 3px 0 0 #ff9900;
+    font: bold 16px OpenSans-Bold, sans-serif;
+    color: #ff9900;
+  }
+
+  .btn_order-call:hover {
+    box-shadow: none;
+  }
+
+  .menu-bar {
+    display: none;
+    background-color: #333;
+  }
+
+  .menu-bar-container {
+    @include container;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu_main {
+    display: flex;
+    flex-direction: column;
+
+    .menu__item {
+      border-top: 1px solid #555;
+    }
+
+    .menu__link {
+      display: block;
+      padding: 10px 15px;
+      color: #fff;
+    }
+
+    .menu__link:hover {
+      background-color: #ffca00;
+      text-decoration: none;
+    }
+  }
+
+  .search {
+    display: flex;
+    order: 2;
+    font-size: 13px;
+  }
+
+  .search__field {
+    flex-grow: 1;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background: transparent;
+    color: #fff;
+  }
+
+  .btn_search {
+    padding: 0 10px;
+    background-color: #ffca00;
+  }
+
+  @media (min-width: 720px) {
+    .info-bar-container {
+      justify-content: space-between;
+      padding: 20px 15px;
+    }
+
+    .btn_toggle-menu {
+      display: none;
+    }
+
+    .logo-container {
+      flex-grow: 0;
+    }
+
+    .logo-img {
+      display: block;
+    }
+
+    .logo-img_mobile {
+      display: none;
+    }
+
+    .info {
+      border-right: 1px solid #fff;
+    }
+
+    .info__item_cart {
+      padding: 0 20px;
+      flex-direction: row;
+    }
+
+    .cart-data {
+      margin-left: 10px;
+    }
+
+    .order-call {
+      display: flex;
+    }
+
+    .menu-bar {
+      display: flex;
+    }
+
+    .menu-bar-container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      width: 100%;
+    }
+
+    .search {
+      order: 0;
+      margin-right: 10px;
+      width: 30%;
+    }
+
+    .search__field {
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    .navbar_main {
+      flex-grow: 1;
+    }
+
+    .menu_main {
+      flex-direction: row;
+      justify-content: flex-end;
+
+      .menu__item {
+        margin-left: 10px;
+        border-top: none;
+      }
+
+      .menu__link {
+        display: inline;
+        padding: 0;
+        color: #fff;
+        text-decoration: underline;
+      }
+
+      .menu__link:hover {
+        background: transparent;
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .logo-container {
+      width: 20%;
+    }
+
+    .info {
+      width: 64%;
+      border-right: none;
+    }
+
+    .info__item {
+      display: flex;
+    }
+
+    .info__item_cart {
+      padding: 0 3%;
+    }
+
+    .order-call {
+      width: 16%;
+    }
+
+    .search {
+      width: auto;
+    }
+
+    .menu_main {
+      .menu__item {
+        margin-left: 35px;
+      }
+    }
+  }
+}

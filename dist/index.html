@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Щепка</title>
+
+    <link rel="stylesheet" href="assets/vendor/slick-1.6.0/slick/slick.css">
+    <link rel="stylesheet" href="assets/css/sprite.css">
+    <link href="assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/app.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <header class="l-header">
+        <div class="info-bar">
+            <div class="info-bar-container">
+                <button class="btn btn_toggle-menu">
+                    <i class="icon icon-bars"></i>
+                    меню
+                </button>
+                <div class="logo-container">
+                    <a href="#" class="logo">
+                        <img src="assets/images/logo.png" alt="" class="logo-img">
+                        <img src="assets/images/logo-mobile.png" alt="" class="logo-img logo-img_mobile">
+                    </a>
+                </div>
+                <ul class="info">
+                    <li class="info__item">
+                        Интернет-магазин пиломатериалов
+                    </li>
+                    <li class="info__item">
+                        <div>
+                            <address>Курган, Ленина, 30</address>
+                            <span class="working-hours">с 9:00 до 20:00 без выходных</span>
+                        </div>
+                    </li>
+                    <li class="info__item info__item_cart">
+                        <i class="icon icon-cart"></i>
+                        <span class="cart-data">Корзина ждет<br>пополнения...</span>
+                    </li>
+                </ul>
+                <div class="order-call">
+                    <div class="phone">+7 (222) 222-22-24</div>
+                    <button class="btn btn_order-call">Заказать звонок</button>
+                </div>
+            </div>
+        </div>
+        <div class="menu-bar">
+            <div class="menu-bar-container">
+                <form action="" class="search">
+                    <input type="text" name="s" placeholder="Поиск по каталогу" class="search__field">
+                    <button class="btn btn_search"><i class="icon icon-search"></i></button>
+                </form>
+                <nav class="navbar navbar_main">
+                    <ul class="menu menu_main">
+                        <li class="menu__item"><a href="#" class="menu__link">Каталог</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Доставка и оплата</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="l-main">
+        <div class="carousel-container carousel-container_main">
+            <div class="carousel carousel_main">
+                <div class="carousel__item">
+                    <img src="images/main-carousel/slide-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <section class="catalog-section">
+            <div class="catalog-container">
+                <h2>Каталог</h2>
+                <div class="catalog__desc">
+                    <p class="bold">Пиломатериалы для строительства дома</p>
+                    <p>Всех размеров, сортов и категорий с доставкой</p>
+                </div>
+                <div class="catalog">
+                    <div class="col-3">
+                        <a href="#" class="product product_1">
+                            <div class="product__title">Доска обрезная</div>
+                            <ul class="dimensions">
+                                <li class="dimensions__item">50х100х6м</li>
+                                <li class="dimensions__item">50х120х6м</li>
+                                <li class="dimensions__item">50х150х6м</li>
+                                <li class="dimensions__item">40х100х6м</li>
+                                <li class="dimensions__item">40х120х6м</li>
+                                <li class="dimensions__item">40х150х6м</li>
+                                <li class="dimensions__item">30х100х6м</li>
+                                <li class="dimensions__item">30х120х6м</li>
+                                <li class="dimensions__item">30х150х6м</li>
+                                <li class="dimensions__item">25х100х6м</li>
+                                <li class="dimensions__item">25х120х6м</li>
+                                <li class="dimensions__item">25х150х6м</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="product product_2">
+                            <div class="product__title">Доска<br>столярная</div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#" class="product product_3">
+                            <div class="product__title">Брус</div>
+                            <ul class="dimensions">
+                                <li class="dimensions__item">100х100х6м</li>
+                                <li class="dimensions__item">100х150х6м</li>
+                                <li class="dimensions__item">150х150х6м</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="product product_4">
+                            <div class="product__title">Половая<br>доска</div>
+                        </a>
+                        <a href="#" class="product product_5">
+                            <div class="product__title">Доска<br>строганная</div>
+                        </a>
+                        <a href="#" class="product product_6">
+                            <div class="product__title">Вагонка<br>сосна</div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#" class="product product_7">
+                            <div class="product__title">Доска заборная,<br>штакетник</div>
+                        </a>
+                        <a href="#" class="product product_8">
+                            <div class="product__title">Брусок<br>сухой</div>
+                        </a>
+                        <a href="#" class="product product_9">
+                            <div class="product__title">Имитация<br>бруса</div>
+                        </a>
+                        <a href="#" class="product product_10">
+                            <div class="product__title">Полок<br>(ПОЛОГ)</div>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#" class="product product_11">
+                            <div class="product__title">Столярные изделия</div>
+                            <ul class="dimensions">
+                                <li class="dimensions__item">Двери и окна</li>
+                                <li class="dimensions__item">Другое</li>
+                            </ul>
+                        </a>
+                        <a href="#" class="product product_12">
+                            <div class="product__title">Брусок сухой<br>строганный</div>
+                        </a>
+                        <a href="#" class="product product_13">
+                            <div class="product__title">Плинутса,<br>уголки</div>
+                        </a>
+                        <a href="#" class="btn btn__full-catalog">
+                            <div>Посмотреть<br>весь каталог</div><i class="icon icon-circled-double-arrow-large"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="catalog__desc">
+                    <p class="bold">Пиломатериалы для строительства дома</p>
+                    <p>Всех размеров, сортов и категорий с доставкой</p>
+                </div>
+                <ul class="product-categories">
+                    <li class="product-categories__item">
+                        <a href="#" class="product-categories__link">
+                            <div class="product-categories__icon">
+                                <i class="icon icon-isolation"></i>
+                            </div>
+                            Изоляция
+                        </a>
+                    </li>
+                    <li class="product-categories__item">
+                        <a href="#" class="product-categories__link">
+                            <div class="product-categories__icon">
+                                <i class="icon icon-glues"></i>
+                            </div>
+                            Клей, пена, герметик
+                        </a>
+                    </li>
+                    <li class="product-categories__item">
+                        <a href="#" class="product-categories__link">
+                            <div class="product-categories__icon">
+                                <i class="icon icon-fasteners"></i>
+                            </div>
+                            Крепеж
+                        </a>
+                    </li>
+                    <li class="product-categories__item">
+                        <a href="#" class="product-categories__link">
+                            <div class="product-categories__icon">
+                                <i class="icon icon-mixes"></i>
+                            </div>
+                            Строительные смеси
+                        </a>
+                    </li>
+                    <li class="product-categories__item">
+                        <a href="#" class="product-categories__link">
+                            <div class="product-categories__icon">
+                                <i class="icon icon-plywood"></i>
+                            </div>
+                            Фанера, OSB
+                        </a>
+                    </li>
+                    <li class="product-categories__item">
+                        <a href="#" class="product-categories__link">
+                            <div class="product-categories__icon">
+                                <i class="icon icon-paints"></i>
+                            </div>
+                            Лакокрасочные материалы и огне-биозащита
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="products-section">
+            <div class="spatula-line"></div>
+            <div class="spatula-bg">
+            </div>
+            <div class="products-container">
+                <h2>Популярные товары <i class="icon icon-star"></i></h2>
+                <div class="products products_popular">
+                    <div class="product">
+                        <img src="images/popular-products/product-1.jpg" alt="" class="product__thumbnail">
+                        <div class="product__title">Клей “Момент” <br> (заголовок в две строки)</div>
+                        <div class="product__desc">
+                            Краткое описание товара, его характеристик и особенностей
+                            <br>
+                            Вес:
+                            <br>
+                            Объем:
+                        </div>
+                        <div class="product__price">275 р.</div>
+                        <div class="product__controls">
+                            <div class="product__quantity">
+                                <input type="text" name="quantity" value="1">
+                                <div class="buttons-container">
+                                    <button class="btn btn_add"><i class="icon icon-chevron-up"></i></button>
+                                    <button class="btn btn_subtract"><i class="icon icon-chevron-down"></i></button>
+                                </div>
+                            </div>
+                            <a class="btn btn_add-to-cart">
+                                В корзину <i class="icon icon-circled-double-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/popular-products/product-2.jpg" alt="" class="product__thumbnail">
+                        <div class="product__title">Клей “Момент” <br> (заголовок в две строки)</div>
+                        <div class="product__desc">
+                            Краткое описание товара, его характеристик и особенностей
+                            <br>
+                            Вес:
+                            <br>
+                            Объем:
+                        </div>
+                        <div class="product__price">275 р.</div>
+                        <div class="product__controls">
+                            <div class="product__quantity">
+                                <input type="text" name="quantity" value="1">
+                                <div class="buttons-container">
+                                    <button class="btn btn_add"><i class="icon icon-chevron-up"></i></button>
+                                    <button class="btn btn_subtract"><i class="icon icon-chevron-down"></i></button>
+                                </div>
+                            </div>
+                            <a class="btn btn_add-to-cart">
+                                В корзину <i class="icon icon-circled-double-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/popular-products/product-3.jpg" alt="" class="product__thumbnail">
+                        <div class="product__title">Клей “Момент” <br> (заголовок в две строки)</div>
+                        <div class="product__desc">
+                            Краткое описание товара, его характеристик и особенностей
+                            <br>
+                            Вес:
+                            <br>
+                            Объем:
+                        </div>
+                        <div class="product__price">275 р.</div>
+                        <div class="product__controls">
+                            <div class="product__quantity">
+                                <input type="text" name="quantity" value="1">
+                                <div class="buttons-container">
+                                    <button class="btn btn_add"><i class="icon icon-chevron-up"></i></button>
+                                    <button class="btn btn_subtract"><i class="icon icon-chevron-down"></i></button>
+                                </div>
+                            </div>
+                            <a class="btn btn_add-to-cart">
+                                В корзину <i class="icon icon-circled-double-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product">
+                        <img src="images/popular-products/product-4.jpg" alt="" class="product__thumbnail">
+                        <div class="product__title">Клей “Момент” <br> (заголовок в две строки)</div>
+                        <div class="product__desc">
+                            Краткое описание товара, его характеристик и особенностей
+                            <br>
+                            Вес:
+                            <br>
+                            Объем:
+                        </div>
+                        <div class="product__price">275 р.</div>
+                        <div class="product__controls">
+                            <div class="product__quantity">
+                                <input type="text" name="quantity" value="1">
+                                <div class="buttons-container">
+                                    <button class="btn btn_add"><i class="icon icon-chevron-up"></i></button>
+                                    <button class="btn btn_subtract"><i class="icon icon-chevron-down"></i></button>
+                                </div>
+                            </div>
+                            <a class="btn btn_add-to-cart">
+                                В корзину <i class="icon icon-circled-double-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-advantages-section">
+            <div class="our-advantages-container">
+                <div class="our-advantages">
+                    <h2>Преимущетва</h2>
+                    <div class="our-advantages__desc">
+                        <p>
+                            В нашей компании вы можете приобрести качественные пиломатериалы в Кургане и Курганской области быстро,
+                            удобно, без лишних хлопот и траты средств.
+                        </p>
+                        <p class="hide-sm">
+                            Мы можем предложить вам лучшую цену на пиломатериалы,
+                            поскольку сами являемся производителями и
+                            не переплачиваем подрядчикам.
+                        </p>
+                        <p>
+                            Чтобы приобрести пиломатериал,<br>
+                            наберите наш номер <span class="bold">+7 (222) 222 22 22</span>
+                        </p>
+                    </div>
+                    <ul class="our-advantages__list">
+                        <li class="our-advantages__item">
+                            <i class="icon icon-years-in-market"></i>
+                            <div class="text">13 лет на рынке пиломатериалов</div>
+                        </li>
+                        <li class="our-advantages__item">
+                            <i class="icon icon-own-production"></i>
+                            <div class="text">Собственное производство</div>
+
+                        </li>
+                        <li class="our-advantages__item">
+                            <i class="icon icon-deep-assortment "></i>
+                            <div class="text">Широкий ассортимент</div>
+
+                        </li>
+                        <li class="our-advantages__item">
+                            <i class="icon icon-quality-guaranty"></i>
+                            <div class="text">Гарантия качества</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="request-consultation-section">
+            <div class="request-consultation-container">
+                <div class="request-consultation__info-container">
+                    <i class="icon icon-piggy-bank"></i>
+                    <div class="request-consultation__info">
+                        <h2>Консультация</h2>
+                        <div class="request-consultation__desc">
+                            по экономии бюджета при<br>покупке пиломатериалов
+                        </div>
+                    </div>
+                </div>
+                <div class="request-consultation__form-container">
+                    <div class="request-consultation__form-title">
+                        Оставьте заявку сейчас и наш менеджер поможет сэкономить ваш бюджет
+                    </div>
+                    <form action="">
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <input type="text" name="phone" placeholder="Телефон">
+                        <button class="btn btn_make-request">Оставить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="l-footer">
+        <div class="footer-container">
+            <div class="catalog">
+                <div class="catalog__title">Каталог</div>
+                <ul class="catalog__list">
+                    <li class="catalog__item"><a href="#" class="catalog__link">Доска обрезная</a></li>
+                    <li class="catalog__item"><a href="#" class="catalog__link">Доска столярная</a></li>
+                    <li class="catalog__item"><a href="#" class="catalog__link">Половая доска</a></li>
+                    <li class="catalog__item"><a href="#" class="catalog__link">Доска строганная</a></li>
+                    <li class="catalog__item"><a href="#" class="catalog__link">Доска заборная, штакетник</a></li>
+                    <li class="catalog__item"><a href="#" class="catalog__link">Брус</a></li>
+                    <li class="catalog__item"><a href="#" class="catalog__link">Вагонка сосна</a></li>
+                    <li class="catalog__item"><a href="#" class="catalog__link">Плинутса, уголки</a></li>
+                    <li class="catalog__item"><a href="#" class="catalog__link">Имитация бруса</a></li>
+                    <li class="catalog__item"><a href="#" class="catalog__link">Брусок сухой</a></li>
+                    <li class="catalog__item"><a href="#" class="catalog__link">Брусок сухой строганный</a></li>
+                    <li class="catalog__item"><a href="#" class="catalog__link">Полок (полог)</a></li>
+                    <li class="catalog__item"><a href="#" class="catalog__link">Столярные изделия</a></li>
+                </ul>
+            </div>
+            <div class="company-info">
+                <ul class="company-info__list">
+                    <li class="company-info__item"><a href="#" class="company-info__link">Акции</a></li>
+                    <li class="company-info__item"><a href="#" class="company-info__link">О Компании</a></li>
+                    <li class="company-info__item"><a href="#" class="company-info__link">Оплата и доставка</a></li>
+                </ul>
+                <div class="copyright-container">
+                    <div class="copyright">&copy; ООО "Щепка", 2017</div>
+                    <div class="created-by">Разработано <a href="#">web-студией KIBA</a></div>
+                </div>
+            </div>
+            <div class="contacts">
+                <ul class="company-info__list company-info__list_single">
+                    <li class="company-info__item"><a href="#" class="company-info__link">Контакты</a></li>
+                </ul>
+                <ul class="contacts_list">
+                    <li class="contacts__item"><i class="icon icon-map-marker"></i> Курган, ул. Ленина, 3</li>
+                    <li class="contacts__item"><i class="icon icon-phone"></i> +7 (222) 222 22 22</li>
+                    <li class="contacts__item"><i class="icon icon-mail"></i> mail@mail.ru</li>
+                </ul>
+                <div id="our-address-map"></div>
+            </div>
+        </div>
+        <div class="copyright-wrapper">
+            <div class="copyright-container">
+                <div class="copyright">&copy; ООО "Щепка", 2017</div>
+                <div class="separator"></div>
+                <div class="created-by">Разработано <a href="#">web-студией KIBA</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap;
+
+        function init(){
+            myMap = new ymaps.Map("our-address-map", {
+                center: [55.440854, 65.345854],
+                zoom: 15,
+                controls: []
+            });
+
+            myMap.geoObjects.add(new ymaps.Placemark([55.440854, 65.345854], {}, {
+                preset: 'islands#dotIcon'
+            }));
+        }
+    </script>
+    <script src="assets/js/libs.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
